@@ -1,0 +1,2 @@
+conda create -n tea_facts python=3
+source activate tea_facts
