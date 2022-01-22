@@ -1,4 +1,23 @@
 conda create -n tea_facts python=3
 source activate tea_facts
 
-You can also export the list of packages in an environment to a file, then include that file with your code. This allows other people to easily load all the dependencies for your code. Pip has similar functionality with pip freeze > requirements.txt.
+You can also export the list of packages in an environment to a file, then include that file with your code
+
+# Using Environments
+
+conda create -n py2_env python=2
+
+
+# Saving and loading environments
+
+conda env export
+conda env export > environment.yaml
+conda env create -f environment.yaml
+
+conda env list
+conda info
+conda list -n env_name
+conda list // or conda list -n env_name scipy, to see if a specific package, say 'scipy' is installed in an environment //
+
+# Removing an environment
+conda env remove -n env_name
